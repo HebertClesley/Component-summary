@@ -1,0 +1,233 @@
+body{
+  width:100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+@font-face {
+  font-family: Red Hat Display;
+  src: url(/Red_Hat_Display/RedHatDisplay-VariableFont_wght.ttf);
+}
+
+.container{
+  width: 100vw;
+  height:100vh;
+  background-image: url(/images/pattern-background-desktop.svg);
+  background-color: hsl(225, 100%, 98%);
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.card-content{
+  width: 30vw;
+  height: 100vh;
+  border-radius: 20px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.top-card{
+  background-image: url(/images/illustration-hero.svg);
+  background-repeat: no-repeat;
+  width: 30vw;
+  height: 30vh;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.bot-card{
+  background-color: #fff;
+  width: 30vw;
+  height: 80vh;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  font-family: Red Hat Display;
+}
+#text, h1{
+  color: hsl(223, 47%, 23%);
+  text-align: center;
+}
+
+p{
+  font-family: sans-serif;
+  color: hsl(224, 23%, 55%);
+  font-size: 16px;
+  text-align: center;
+  line-height: 25px;
+}
+
+#player{
+  width: 70%;
+  height: 70px;
+  background-color: hsl(225, 100%, 98%);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 1px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  
+}
+
+#icone{
+  width: 60px;
+  height: 50px;
+  margin: 2px;
+}
+
+#mensa{
+  margin: 0;
+  border: 0;
+  padding: 0px;   
+}
+
+#annual{
+    font-size:15px;
+    color: hsl(223, 47%, 23%);
+    font-weight: bolder;
+    padding: 2px;
+    margin: 0%;
+    border: 0px;
+    text-align: left;
+        
+}
+
+#valor{
+  font-size:15px;
+  color: hsl(223, 47%, 23%);
+  padding: 3px;
+  margin: 2px;
+  border: 0px;
+}
+
+#changer{
+  font-size:15px;
+  color: hsl(245, 75%, 52%);
+  padding: 3px;
+  margin: 0px;
+  border: 0px;
+  text-align: center;
+  font-weight: bolder;
+  
+}
+
+#Processed{
+  width: 70%;
+  height: 50px;
+  background-color: hsl(245, 75%, 52%);
+  
+  color: #fff;
+  font-weight: bolder;
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+  border-radius: 10px;
+}
+
+#cancelar{
+  width: 70%;
+  height: 50px;
+  background-color:#fff;
+
+  color: hsl(224, 23%, 55%);
+  font-weight: bolder;
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+  border-radius: 10px;
+}
+
+button:hover{
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 20px 24px;
+}
+
+@media(max-width:1440px) {
+  .card-content{
+    width: 30vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+  }
+    
+  .top-card{
+    background-size: contain;
+    background-repeat: round;   
+  } 
+
+}
+
+
+@media(max-width:1024px) {
+  .top-card{
+    background-size: contain;
+    background-repeat: round;
+    width: 30vw;
+    height: 30vh;
+    
+  } 
+    
+
+}
+
+@media(max-width:770px) {
+  .card-content{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  .top-card{
+    width: 50vw;
+    height: 50vh;
+    background-repeat: round;
+    background-size: contain;
+  }
+
+  .bot-card{
+    width: 50vw;
+    height: 100vh;
+    
+  }
+  
+}
+
+@media(max-width: 425px) {
+  
+  .card-content{
+    width: 90vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    
+  }
+  
+  .top-card{
+    width: 90vw;
+    height: 50vh;
+    background-repeat: round;
+    background-size: contain;
+  }
+
+  .bot-card{
+    width: 90vw;
+    height: 100vh;
+    
+  }
+   
+}
+
